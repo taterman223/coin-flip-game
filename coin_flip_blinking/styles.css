@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.choice-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.choice-btn.selected {
+  background-color: #007BFF;
+  color: white;
+}
+
+.blinking {
+  animation: blink 0.2s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
